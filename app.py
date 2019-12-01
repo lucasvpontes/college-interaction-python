@@ -10,7 +10,7 @@ tasks = [
         'title': u'Buy groceries',
         'description': u'Milk, Cheese, Pizza, Fruit, Tylenol',
         'done': False
-    }, 
+    },
     {
         'id': 2,
         'title': u'Learn Python',
@@ -21,11 +21,8 @@ tasks = [
 
 
 @app.route('/api/v1.0/validation/images', methods=['POST'])
-def get_task(task_id):
-    task = [task for task in tasks if task['id'] == task_id]
-    if len(task) == 0:
-        os.abort(404)
-    return jsonify({'task': task[0]})
+def get_task():
+    return jsonify({'task': tasks})
 
 
 @app.errorhandler(404)
