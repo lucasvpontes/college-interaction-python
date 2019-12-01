@@ -33,3 +33,4 @@ whichcraft==0.6.0
 dlib==19.8.2
 face_recognition==1.2.3
 Flask==1.0.1
+imutils==0.5.2
