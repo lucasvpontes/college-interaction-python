@@ -20,7 +20,7 @@ tasks = [
 ]
 
 
-@app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['GET'])
+@app.route('/api/v1.0/validation/images', methods=['POST'])
 def get_task(task_id):
     task = [task for task in tasks if task['id'] == task_id]
     if len(task) == 0:
