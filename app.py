@@ -10,7 +10,7 @@ tasks = [
         'title': u'Buy groceries',
         'description': u'Milk, Cheese, Pizza, Fruit, Tylenol',
         'done': False
-    },
+    }, 
     {
         'id': 2,
         'title': u'Learn Python',
